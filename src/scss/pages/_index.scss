@@ -35,13 +35,14 @@
   // background: url(../coffee-apple.jpg) no-repeat center center fixed !important;
   background: radial-gradient(
     at Top left,
-    rgba(0,20, 10, 1) 0%,
-    rgba(43, 9, 30, 1) 100%
-  ); 
-  -webkit-background: cover;
-  -moz-background: cover;
-  -o-background: cover;
-  background: cover;
+    rgb(2, 10, 36) 0%,
+    rgb(4, 4, 31) 100%
+  ) no-repeat center center fixed  !important; 
+    // background: url(../a.jpg) no-repeat center center fixed !important;
+    -webkit-background: cover;
+    -moz-background: cover;
+    -o-background: cover;
+    background: cover;
 
   .v-card__title {
     background: rgba(0,0,0,0.3);

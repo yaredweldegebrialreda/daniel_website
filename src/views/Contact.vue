@@ -1,6 +1,6 @@
 
 <template>
-  <div class="text-center">
+  <div >
     <v-snackbar
       v-model="snackbar"
       top
@@ -16,18 +16,15 @@
 
     <v-content>
       <div class="staticHero">
-        <v-img src="../assets/images/about-us.jpg">
+        <v-img src="../assets/images/about-us.jpg" height="500">
           <v-row align="end" class="lightbox white--text pa-2 fill-height">
             <v-col>
               <v-container>
-                <div class="headline">Contact Us</div>
+                <div class="headline center--text">Contact Us</div>
               </v-container>
             </v-col>
           </v-row>
         </v-img>
-      </div>
-      <div class="googlemap">
-       <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=munich+(Adey%20Meselesh)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/route-planner.htm">Google Route Planner</a></div>
       </div>
       <div>
         <v-container>
@@ -66,19 +63,26 @@
               label="Message"
               required
             ></v-textarea>
-            <v-btn
-              :disabled="!valid"
+            <div class="text-center">
+             <v-btn
               color="#1216e0"
               :loading="loading"
-              class="mr-4 white--text"
+              class="mx-2 white--text"
+              align="right"
               type="submit"
               ><strong>Submit</strong>
             </v-btn>
-            <v-btn color="error" class="mr-4" @click="reset"
+            <v-btn  center color="error" class="mx-3" @click="reset"
               ><strong>Reset</strong>
             </v-btn>
+            
+            </div>
+           
           </v-form>
         </v-container>
+      </div>
+       <div class="googlemap">
+       <div style="width: 100%"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=munich+(Adey%20Meselesh)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/route-planner.htm">Google Route Planner</a></div>
       </div>
     </v-content>
   </div>

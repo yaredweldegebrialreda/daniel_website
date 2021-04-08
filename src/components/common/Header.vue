@@ -1,13 +1,13 @@
 <template>
   <v-container>
     <v-toolbar
-      :color="scrolled ? '#263238' : 'transparent'"
+      :color="scrolled ? '#24292e' : '#24292e'"
       :dark="!scrolled"
       flat
       class="body mx-3"
     >
       <v-toolbar-title >
-      <router-link to="/"> <v-img src="/logo.png" max-height="120" max-width="120" alt="Logo"></v-img></router-link>
+      <router-link to="/"> <v-img src="/logo.jpeg" max-height="60" max-width="160" alt="Logo"></v-img></router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
 
@@ -101,7 +101,7 @@ export default {
     color: white;
 
     &.router-link-exact-active {
-      color: #008c96;
+      color: rgb(156, 156, 156);
     }
   }
 }

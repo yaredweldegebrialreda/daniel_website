@@ -12,6 +12,8 @@ import About from "./views/About";
 import Contact from "./views/Contact";
 import NotFound from "./views/NotFound";
 import OurServices from "./views/OurServices";
+import Imprint from "./views/Imprint";
+import PrivacyPolicy from "./views/PrivacyPolicy";
 
 Vue.use(VueRouter);
 Vue.use(LoadScript);
@@ -26,6 +28,8 @@ const router = new VueRouter({
     { path: "/ourservices", component: OurServices },
     { path: "/about", component: About },
     { path: "/contact", component: Contact },
+    { path: "/imprint", component: Imprint },
+    { path: "/privacy-policy", component: PrivacyPolicy },
     { path: "*", component: NotFound },
   ],
   mode: "hash",

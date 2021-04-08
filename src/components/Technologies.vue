@@ -3,7 +3,7 @@
     <v-container>
       <h2 class="text-center white--text"><strong>Our Services </strong></h2>
       <v-row>
-        <v-col v-for="item in webs" :key="item.id" cols="6" >
+        <v-col v-for="item in webs" :key="item.id" cols="6">
           <v-card flat tile color="transparent">
             <v-img :src="item.src" aspect-ratio="2.0" class="grey lighten-2">
               <template v-slot:placeholder>
@@ -19,7 +19,7 @@
           <v-col cols="12">
             <v-card flat color="transparent">
               <p class="white--text">
-                {{item.content}}
+                {{ item.content }}
               </p>
             </v-card>
           </v-col>
@@ -28,7 +28,7 @@
     </v-container>
     <v-container>
       <h2 class="text-center white--text"><strong>Our Community</strong></h2>
-     <v-row>
+      <v-row>
         <v-col
           v-for="m in mobiles"
           :key="m.id"
@@ -52,9 +52,9 @@
         <v-col cols="6">
           <v-card flat color="transparent">
             <p class="white--text">
-             {{community_content}}
-            {{community_content}}
-            {{community_content}}
+              {{ community_content }}
+              {{ community_content }}
+              {{ community_content }}
             </p>
           </v-card>
         </v-col>
@@ -121,12 +121,14 @@ export default {
   name: "Technologies",
   data() {
     return {
-      community_content:"When penetration-testing, large infrastructures such as power grids, utility systems, and nuclear facilities, large teams of penetration testers, called Red Teams, are employed. Vulnerability Assessor: Scans for, identifies and assesses vulnerabilities in IT systems including computers, networks, software systems, information systems, and applications software.",
+      community_content:
+        "When penetration-testing, large infrastructures such as power grids, utility systems, and nuclear facilities, large teams of penetration testers, called Red Teams, are employed. Vulnerability Assessor: Scans for, identifies and assesses vulnerabilities in IT systems including computers, networks, software systems, information systems, and applications software.",
       webs: [
         {
           id: 1,
           src: require("../assets/images/aa.jpg"),
-          content:"Intrusion Detection Specialist: Monitors networks, computers, and applications in large organizations, looking for events and traffic indicators that signal intrusion. Determines the damage caused by detected intrusions, identifies how an intrusion occurred, and recommends safeguards against similar intrusions. Also does penetration testing to identify vulnerabilities and recommend safeguards as preemptive measures. Computer Security Incident Responder: A member of team that prepares for and mounts rapid response to security threats and attacks such as viruses and denial-of-service attacks. Source Code Auditor: Reviews software source code to identify potential security issues and vulnerabilities that could be exploited by hackers to gain unauthorized access to data and system resources."
+          content:
+            "Intrusion Detection Specialist: Monitors networks, computers, and applications in large organizations, looking for events and traffic indicators that signal intrusion. Determines the damage caused by detected intrusions, identifies how an intrusion occurred, and recommends safeguards against similar intrusions. Also does penetration testing to identify vulnerabilities and recommend safeguards as preemptive measures.",
         },
         // {
         //   id: 2,
@@ -135,12 +137,14 @@ export default {
         {
           id: 3,
           src: require("../assets/images/c.jpg"),
-           content:"Intrusion Detection Specialist: Monitors networks, computers, and applications in large organizations, looking for events and traffic indicators that signal intrusion. Determines the damage caused by detected intrusions, identifies how an intrusion occurred, and recommends safeguards against similar intrusions. Also does penetration testing to identify vulnerabilities and recommend safeguards as preemptive measures. Computer Security Incident Responder: A member of team that prepares for and mounts rapid response to security threats and attacks such as viruses and denial-of-service attacks. Source Code Auditor: Reviews software source code to identify potential security issues and vulnerabilities that could be exploited by hackers to gain unauthorized access to data and system resources."
+          content:
+            "Computer Security Incident Responder: A member of team that prepares for and mounts rapid response to security threats and attacks such as viruses and denial-of-service attacks. Source Code Auditor: Reviews software source code to identify potential security issues and vulnerabilities that could be exploited by hackers to gain unauthorized access to data and system resources.",
         },
         {
           id: 4,
           src: require("../assets/images/d.jpg"),
-           content:"Intrusion Detection Specialist: Monitors networks, computers, and applications in large organizations, looking for events and traffic indicators that signal intrusion. Determines the damage caused by detected intrusions, identifies how an intrusion occurred, and recommends safeguards against similar intrusions. Also does penetration testing to identify vulnerabilities and recommend safeguards as preemptive measures. Computer Security Incident Responder: A member of team that prepares for and mounts rapid response to security threats and attacks such as viruses and denial-of-service attacks. Source Code Auditor: Reviews software source code to identify potential security issues and vulnerabilities that could be exploited by hackers to gain unauthorized access to data and system resources."
+          content:
+            "Virus Technician: analyzes newly discovered computer viruses, and designs and develops software to defend against them. Penetration Tester (also known as Ethical Hacker or Assurance Validator): Not only scans for and identifies vulnerabilities, but exploits them to provide hard evidence that they are vulnerabilities. When penetration-testing, large infrastructures such as power grids, utility systems, and nuclear facilities, large teams of penetration testers, called Red Teams, are employed.",
         },
         // {
         //   id: 5,
@@ -149,21 +153,24 @@ export default {
         {
           id: 6,
           src: require("../assets/images/f.jpg"),
-           content:"Intrusion Detection Specialist: Monitors networks, computers, and applications in large organizations, looking for events and traffic indicators that signal intrusion. Determines the damage caused by detected intrusions, identifies how an intrusion occurred, and recommends safeguards against similar intrusions. Also does penetration testing to identify vulnerabilities and recommend safeguards as preemptive measures. Computer Security Incident Responder: A member of team that prepares for and mounts rapid response to security threats and attacks such as viruses and denial-of-service attacks. Source Code Auditor: Reviews software source code to identify potential security issues and vulnerabilities that could be exploited by hackers to gain unauthorized access to data and system resources."
+          content:
+            "Vulnerability Assessor: Scans for, identifies and assesses vulnerabilities in IT systems including computers, networks, software systems, information systems, and applications software.",
         },
       ],
       mobiles: [
         {
           id: 1,
           src: require("../assets/images/2.jpg"),
-          content:"Intrusion Detection Specialist: Monitors networks, computers, and applications in large organizations, looking for events and traffic indicators that signal intrusion. Determines the damage caused by detected intrusions, identifies how an intrusion occurred, and recommends safeguards against similar intrusions. Also does penetration testing to identify vulnerabilities and recommend safeguards as preemptive measures. Computer Security Incident Responder: A member of team that prepares for and mounts rapid response to security threats and attacks such as viruses and denial-of-service attacks. Source Code Auditor: Reviews software source code to identify potential security issues and vulnerabilities that could be exploited by hackers to gain unauthorized access to data and system resources."
+          content:
+            "Intrusion Detection Specialist: Monitors networks, computers, and applications in large organizations, looking for events and traffic indicators that signal intrusion. Determines the damage caused by detected intrusions, identifies how an intrusion occurred, and recommends safeguards against similar intrusions. Also does penetration testing to identify vulnerabilities and recommend safeguards as preemptive measures. Computer Security Incident Responder: A member of team that prepares for and mounts rapid response to security threats and attacks such as viruses and denial-of-service attacks. Source Code Auditor: Reviews software source code to identify potential security issues and vulnerabilities that could be exploited by hackers to gain unauthorized access to data and system resources.",
         },
       ],
       deployment: [
         {
           id: 1,
           src: require("../assets/images/f.jpg"),
-          content:"When penetration-testing, large infrastructures such as power grids, utility systems, and nuclear facilities, large teams of penetration testers, called Red Teams, are employed. Vulnerability Assessor: Scans for, identifies and assesses vulnerabilities in IT systems including computers, networks, software systems, information systems, and applications software."
+          content:
+            "When penetration-testing, large infrastructures such as power grids, utility systems, and nuclear facilities, large teams of penetration testers, called Red Teams, are employed. Vulnerability Assessor: Scans for, identifies and assesses vulnerabilities in IT systems including computers, networks, software systems, information systems, and applications software.",
         },
       ],
     };

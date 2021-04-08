@@ -1,11 +1,12 @@
 <template>
   <v-app class="body">
     <v-app-bar
-      :color="scrolled ? '#263238' : 'transparent'"
+      :color="scrolled ? '#24292e' : '#24292e'"
       :dark="!scrolled"
       fixed
+      app
       elevate-on-scroll
-      max-height="65"
+      max-height="90"
       class="mr-0 ml-0 pl-12 pr-0"
     >
       <Header />

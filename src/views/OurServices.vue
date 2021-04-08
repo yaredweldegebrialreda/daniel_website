@@ -1,12 +1,11 @@
 <template>
 <v-content>
-
  <div class="staticHero">
-      <v-img src="../assets/images/services.jpg">
+      <v-img src="../assets/images/services.jpg" height="500">
         <v-row align="end" class="lightbox white--text pa-2 fill-height">
           <v-col>
             <v-container>
-              <div class="headline">About Us</div>
+              <div class="headline">Our Services</div>
             </v-container>
           </v-col>
         </v-row>

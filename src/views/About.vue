@@ -1,8 +1,8 @@
 <template>
   <v-content>
-    <div class="staticHero">
-      <v-img src="../assets/images/about1.jpg">
-        <v-row align="end" class="lightbox white--text pa-2 fill-height">
+    <div class="staticHero ">
+      <v-img src="../assets/images/about1.jpg" height="500">
+        <v-row align="end"  class="lightbox white--text  pa-2 fill-height">
           <v-col>
             <v-container>
               <div class="headline">About Us</div>
